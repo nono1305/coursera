@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+.container{
+    position: relative;
+    
+}
+
+.topright{
+    position:absolute;
+    right: 0px;
+    top: 0px;
+    width: 120px;
+}
+
+body{
+    margin: 20px;
+}
+
+h1{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.75em;
+    
+}
+
+h2{
+    font-size: 1.25em;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 2px;
+    margin: 0;
+    border-bottom: 1px black solid;
+    border-left: 1px black solid;
+}
+
+section{
+    float: left;
+    padding: 10px;
+    
+}
+
+div{
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 10px;
+    border: 1px black solid;
+    
+}
+
+p{
+    padding-top: 40px;
+    font-size: 1em;
+}
+
+#s1 h2{
+    background-color: darkseagreen;
+}
+
+#s2 h2{
+    background-color: salmon;
+}
+
+#s3 h2{
+    background-color: peachpuff;
+}
+
+
+/*desktop*/
+@media (min-width: 992px){
+    section{
+        width: 33.33%;
+    }
+}
+
+ /*tablet */
+ @media (min-width: 768px) and (max-width: 991px){
+     #s1{
+        width: 50%;
+     }
+     
+     #s2{
+         width: 50%;
+     }
+     
+     #s3{
+         width: 100%;
+     }
+}
+
+/*mobile */
+ @media (max-width: 767px){
+      section{
+        width: 100%;
+    }
+     body{
+         margin: 30px;
+     }
+     
+} 
+
